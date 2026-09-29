@@ -6,7 +6,7 @@ function show(id) {
   pages.forEach(p => p.classList.toggle('is-active', p.id === id));
   navButtons.forEach(b => b.classList.toggle('is-active', b.dataset.go === id));
   document.body.classList.toggle('on-home', id === 'home');
-  window.scrollTo(0, 0);
+  document.getElementById(id).scrollTop = 0;
 }
 
 
