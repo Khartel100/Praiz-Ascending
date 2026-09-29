@@ -9,7 +9,7 @@ function show(id) {
   window.scrollTo(0, 0);
 }
 
-// Every button with data-go="pagename" switches page
+
 document.querySelectorAll('[data-go]').forEach(btn => {
   btn.addEventListener('click', () => {
     const id = btn.dataset.go;
@@ -18,7 +18,7 @@ document.querySelectorAll('[data-go]').forEach(btn => {
   });
 });
 
-// Phone back button works between pages
+
 window.addEventListener('popstate', () => show(location.hash.slice(1) || 'home'));
 
 show(location.hash.slice(1) || 'home');
