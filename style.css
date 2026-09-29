@@ -104,3 +104,11 @@ body.on-home .nav { background: transparent; }
 .nav button:focus-visible, .cta:focus-visible { outline: 3px solid var(--gold); outline-offset: -4px; }
 
 @media (prefers-reduced-motion: reduce) { * { transition: none !important; } }
+
+/* ---------- Countdown ---------- */
+.countdown { max-width: 22rem; margin: 0 auto 1.3rem; }
+.cd-label { font-size: .85rem; color: var(--gold); letter-spacing: .08em; text-transform: uppercase; margin-bottom: .6rem; }
+.cd-units { display: grid; grid-template-columns: repeat(4, 1fr); gap: .5rem; }
+.cd-units div { background: rgba(255,255,255,.08); border: 1px solid var(--gold); border-radius: 1rem; padding: .6rem .2rem; }
+.cd-units b { display: block; font-size: clamp(1.3rem, 6.5vw, 1.8rem); line-height: 1.1; }
+.cd-units small { font-size: .65rem; font-weight: 400; color: #ddd; text-transform: uppercase; }
