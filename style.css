@@ -19,14 +19,14 @@ body {
   -webkit-text-size-adjust: 100%;
 }
 
-/* On laptops: keep it as a centered phone-width column */
+
 body { max-width: 480px; margin: 0 auto; position: relative; min-height: 100dvh; }
 
-/* ---------- Pages ---------- */
+
 .page { display: none; min-height: 100dvh; padding-bottom: calc(var(--nav-h) + env(safe-area-inset-bottom)); }
 .page.is-active { display: block; }
 
-/* ---------- Home ---------- */
+
 #home { background: linear-gradient(180deg, var(--navy) 0%, var(--purple) 100%); }
 
 .flyer { display: block; width: 100%; height: auto; background: var(--navy); }
@@ -58,7 +58,7 @@ body { max-width: 480px; margin: 0 auto; position: relative; min-height: 100dvh;
 .cta:active { transform: scale(.97); }
 .cta img { width: 2.2rem; height: 2.2rem; flex: none; }
 
-/* ---------- Header (map + contact) ---------- */
+
 .top {
   background: var(--navy);
   padding: calc(1.25rem + env(safe-area-inset-top)) 1.5rem 1.25rem;
@@ -68,12 +68,12 @@ body { max-width: 480px; margin: 0 auto; position: relative; min-height: 100dvh;
 .logo { display: block; height: 4.6rem; width: auto; max-width: 70%; margin: 0 auto; object-fit: contain; }
 .top h1 { margin-top: 1rem; font-size: clamp(1rem, 4.6vw, 1.25rem); line-height: 1.5; color: #fff; }
 
-/* ---------- Embed area ---------- */
+
 .embed-area { padding: 1rem; }
 .embed-area iframe { display: block; width: 100%; height: calc(100dvh - 22rem); min-height: 22rem; border: 0; }
 .placeholder { min-height: 20rem; display: grid; place-items: center; color: #bbb; font-weight: 400; border: 2px dashed #ddd; border-radius: 1rem; }
 
-/* ---------- Bottom nav ---------- */
+
 .nav {
   position: fixed; bottom: 0; left: 50%; transform: translateX(-50%);
   width: 100%; max-width: 480px; height: calc(var(--nav-h) + env(safe-area-inset-bottom));
@@ -84,7 +84,7 @@ body { max-width: 480px; margin: 0 auto; position: relative; min-height: 100dvh;
   z-index: 10;
   transition: background .2s;
 }
-/* On the home page the nav sits transparent over the purple panel */
+
 body.on-home .nav { background: transparent; }
 
 .nav button {
